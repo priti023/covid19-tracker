@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClientModule}  from '@angular/common/http'
+import {ChartsModule} from 'ng2-charts';
+import {CountUpModule } from 'ngx-countup'
+
 
 @NgModule({
   declarations: [
@@ -10,7 +14,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ChartsModule,CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
